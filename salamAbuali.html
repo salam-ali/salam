@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nobel Prize Quiz</title>
+    <link rel="stylesheet" href="salamAbuali.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nobel Prize Quiz</h1>
+        <form id="quizForm">
+            <!-- Visitor Information -->
+            <div class="input-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <span id="firstNameError" class="error-message"></span>
+            </div>
+            
+            <div class="input-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <span id="lastNameError" class="error-message"></span>
+            </div>
+            
+            <div class="input-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+                <span id="emailError" class="error-message"></span>
+            </div>
+            
+            <!-- Nobel Prize Quiz Questions -->
+            <h3>1. Who won the Nobel Peace Prize in 2020? *</h3>
+            <div class="input-group">
+                <input type="radio" name="question1" value="The World Food Programme"> The World Food Programme<br>
+                <input type="radio" name="question1" value="Malala Yousafzai"> Malala Yousafzai<br>
+                <input type="radio" name="question1" value="Albert Einstein"> Albert Einstein<br>
+                <span id="question1Error" class="error-message"></span>
+            </div>
+            
+            <h3>2. Select all Nobel Laureates who won in Physics (Choose at least one) *</h3>
+            <div class="input-group">
+                <input type="checkbox" name="question2" value="Marie Curie"> Marie Curie<br>
+                <input type="checkbox" name="question2" value="Albert Einstein"> Albert Einstein<br>
+                <input type="checkbox" name="question2" value="Gabriel Garcia Marquez"> Gabriel Garcia Marquez<br>
+                <span id="question2Error" class="error-message"></span>
+            </div>
+            
+            <h3>3. Who was the first woman to win a Nobel Prize? *</h3>
+            <div class="input-group">
+                <input type="text" id="question3" name="question3">
+                <span id="question3Error" class="error-message"></span>
+            </div>
+            
+            <!-- Submit Button and Messages -->
+            <button type="submit">Submit</button>
+            <div id="successMessage" class="success-message"></div>
+        </form>
+    </div>
+    
+    <script src="salamAbuali.js"></script>
+</body>
+</html>
